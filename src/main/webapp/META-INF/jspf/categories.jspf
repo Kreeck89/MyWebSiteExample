@@ -1,0 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<jsp:useBean id="courseService" scope="application" class="service.CourseService"/>
+<div align="left" style="width: 100%; margin-left: 25px">
+    <h3 align="center" style="color: antiquewhite">Courses:</h3>
+    <div class="list-group" align="center">
+        <c:forEach items="${courseService.courses}" var="elem">
+            <a href="course?id=${elem.id}" class="list-group-item list-group-item-action">${elem.name}</a>
+        </c:forEach>
+    </div>
+</div>

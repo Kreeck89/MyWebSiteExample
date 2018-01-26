@@ -1,0 +1,44 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<div id="footer">
+    <div class="container">
+        <div class="footer_sub">
+            <h6>Our Story</h6>
+            <p>This is my first commerce site. This is my first commerce site. This is my first commerce site.
+                <span>
+                    <a href="https://www.linkedin.com/in/aleksandr-iushko-894577156/" style="color: #999">
+                        For more information...
+                    </a>
+                </span>
+            </p>
+        </div>
+        <div class="footer_sub_2">
+            <center>
+                <h6>Important links</h6>
+                <ul>
+                    <li><a href="index.jsp">Home</a></li>
+                    <li><a href="login.jsp">Login</a></li>
+                    <li><a href="register.jsp">Register</a></li>
+                </ul>
+            </center>
+        </div>
+        <div class="footer_sub_2">
+            <center>
+                <h6>Social links</h6>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100017268574799">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/aleksandr-iushko-894577156/">LinkedIn</a></li>
+                    <li><a href="https://github.com/Kreeck89">GitHub</a></li>
+                </ul>
+            </center>
+        </div>
+        <div class="footer_sub_3">
+            <center>
+                <h6>Subscribe Us</h6>
+                <input type="text" name="subs" placeholder="Write your e-mail" class="subs">
+                <input type="submit" name="submit_btn" value="Subscribe" class="sub_btn">
+                <p class="sub_p">Enter your email for notification</p>
+            </center>
+        </div>
+    </div>
+</div>
