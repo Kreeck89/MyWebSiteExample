@@ -15,6 +15,7 @@ public class UpdateLessonServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
         LessonService lessonService = new LessonService();
         Lesson lesson = new Lesson();
         lesson.setName(req.getParameter("name"));
