@@ -23,7 +23,7 @@ public class LessonService {
     @Setter
     private static int num = 1;
     private static String URL_LESSONS_ID;
-    private static final String JSON_PATH = "/Users/ozzy/IdeaProjects/MyWebSiteExample/src/main/resources/data/lesson.json";
+    private static final String JSON_PATH = "/Users/kreeck/IdeaProjects/MyWebSiteExample/src/main/resources/data/lesson.json";
 
     public List<Lesson> getFromDataJson() {
         List<Lesson> lessons = new ArrayList<>();

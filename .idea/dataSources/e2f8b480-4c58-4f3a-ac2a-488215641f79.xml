@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="dft57ump7h08qo@ec2-54-217-235-166.eu-west-1.compute.amazonaws.com">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
     <root id="1"/>
     <database id="2" parent="1" name="dft57ump7h08qo">
       <ObjectId>546099</ObjectId>
@@ -1887,10 +1887,10 @@
       <CreateRole>1</CreateRole>
       <CreateDb>1</CreateDb>
       <CanLogin>1</CanLogin>
-      <Replication>1</Replication>
       <ConnectionLimit>-1</ConnectionLimit>
-      <BypassRls>1</BypassRls>
       <Config>search_path=pg_catalog</Config>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
     </role>
     <role id="459" parent="1" name="pqlrzibtuoxuma">
       <ObjectId>16543</ObjectId>
@@ -2640,13 +2640,13 @@
     </table>
     <column id="587" parent="584" name="id">
       <Position>1</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>261641</StateNumber>
     </column>
     <column id="588" parent="584" name="name">
       <Position>2</Position>
-      <DataType>varchar(100)|0</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <StateNumber>261641</StateNumber>
     </column>
     <index id="589" parent="584" name="courses_id_uindex">
@@ -2662,41 +2662,40 @@
     <key id="591" parent="584" name="courses_pkey">
       <ObjectId>876770</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>courses_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>courses_pkey</UnderlyingIndexName>
     </key>
     <column id="592" parent="585" name="id">
       <Position>1</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>277245</StateNumber>
       <DefaultExpression>nextval(&apos;web.lessons_id_seq&apos;::regclass)</DefaultExpression>
-      <SequenceName>web.lessons_id_seq</SequenceName>
     </column>
     <column id="593" parent="585" name="course_id">
       <Position>2</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>268995</StateNumber>
     </column>
     <column id="594" parent="585" name="name">
       <Position>3</Position>
-      <DataType>varchar(100)|0</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <StateNumber>268995</StateNumber>
     </column>
     <column id="595" parent="585" name="about">
       <Position>4</Position>
-      <DataType>text|0</DataType>
+      <DataType>text|0s</DataType>
       <StateNumber>268995</StateNumber>
     </column>
     <column id="596" parent="585" name="price">
       <Position>5</Position>
-      <DataType>varchar(50)|0</DataType>
+      <DataType>varchar(50)|0s</DataType>
       <StateNumber>269016</StateNumber>
     </column>
     <column id="597" parent="585" name="image">
       <Position>6</Position>
-      <DataType>varchar(400)|0</DataType>
+      <DataType>varchar(400)|0s</DataType>
       <StateNumber>268995</StateNumber>
     </column>
     <index id="598" parent="585" name="lessons_id_uindex">
@@ -2712,50 +2711,49 @@
     <key id="600" parent="585" name="lessons_pkey">
       <ObjectId>876899</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>lessons_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>lessons_pkey</UnderlyingIndexName>
     </key>
     <column id="601" parent="586" name="id">
       <Position>1</Position>
-      <DataType>integer|0</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>269995</StateNumber>
       <DefaultExpression>nextval(&apos;web.users_id_seq&apos;::regclass)</DefaultExpression>
-      <SequenceName>web.users_id_seq</SequenceName>
     </column>
     <column id="602" parent="586" name="name">
       <Position>2</Position>
-      <DataType>varchar(100)|0</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <StateNumber>269995</StateNumber>
     </column>
     <column id="603" parent="586" name="surname">
       <Position>3</Position>
-      <DataType>varchar(100)|0</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <StateNumber>269995</StateNumber>
     </column>
     <column id="604" parent="586" name="email">
       <Position>4</Position>
-      <DataType>varchar(65)|0</DataType>
+      <DataType>varchar(65)|0s</DataType>
       <StateNumber>269995</StateNumber>
     </column>
     <column id="605" parent="586" name="password">
       <Position>5</Position>
-      <DataType>varchar(200)|0</DataType>
+      <DataType>varchar(200)|0s</DataType>
       <StateNumber>269995</StateNumber>
     </column>
     <column id="606" parent="586" name="phone">
       <Position>6</Position>
-      <DataType>varchar(20)|0</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <StateNumber>269995</StateNumber>
     </column>
     <column id="607" parent="586" name="image">
       <Position>7</Position>
-      <DataType>text|0</DataType>
+      <DataType>text|0s</DataType>
       <StateNumber>271205</StateNumber>
     </column>
     <column id="608" parent="586" name="role">
       <Position>8</Position>
-      <DataType>varchar(20)|0</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <StateNumber>274682</StateNumber>
     </column>
     <index id="609" parent="586" name="users_id_uindex">
@@ -2771,8 +2769,8 @@
     <key id="611" parent="586" name="users_pkey">
       <ObjectId>876964</ObjectId>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
